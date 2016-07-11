@@ -14,8 +14,8 @@
 }
 
 @font-face {
-  font-family: "cooperbold";
-  src:url("CooperHewitt-Bold.otf");
+  font-family: "beyond";
+  src:url("teter.otf");
 }
 
 @font-face {
@@ -49,7 +49,7 @@ body {
 }
 
 h1,h2,h3 {
-  font-family: cooperbold !important;
+  font-family: beyond !important;
 }
 
 *.test-font{
@@ -101,12 +101,129 @@ i.big{
 }
 
 /*PUBLISHER**/
+
+.item-nota {
+  -webkit-transition: 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.item-nota {
+    -webkit-transition: 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.item-nota-desaparecer {
+  /*transition: all 1s;*/
+  opacity: 0;
+}
 .list {
-  padding:20px;
+  padding: 0px 3px
+}
+.margin-b:first-child {
+  margin-top: 5px;
+}
+
+.margin-b {
+  margin-bottom: 6px;
+}
+
+a.item-content {
+
 }
 .button.button-positive{
   background-color:#158278 !important;
 }
+
+h1.small {
+      font-size: 24px;
+    line-height: 35px;
+    color: white;
+}
+
+.center-align {
+  margin: 0 auto;
+
+}
+
+.bar-publisher {
+  background: #00796B;
+}
+
+a.tab-item span {
+  display: none;
+}
+
+a.tab-item i {
+  color: #B2D7D2;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+a.tab-item-active  i {
+  color:white;
+
+  -webkit-transform: translate(0%, -8%) scale(0.85);
+          transform: translate(0%, -8%) scale(0.85);
+
+}
+
+a.tab-item-active span {
+  display: block;
+  color:white;
+}
+
+div.tab-nav {
+  background: #00796B
+}
+
+
+.item-avatar .item-content div.content-note > img:nth-child(2){
+  position: absolute;
+    top: 16px;
+    left: 25px;
+    max-width: 40px;
+    max-height: 40px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.priority-bar {
+      position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+ 
+    width: 13px;
+}
+
+.no-border{
+  border: 0px;
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1),0 2px 2px 0 rgba(0,0,0,0.1)!important;
+}
+
+.item a.item-content{
+  background: #F1F1F1;
+}
+.title-note {
+  color: #353535;
+}
+.red {
+  background:#E43232
+}
+
+.yellow {
+  background:#E6B500
+}
+
+.green {
+  background:#26a69a
+}
+
+.litle {
+  font-size: 18px !important;
+}
+
 /**PUBLISHER**/
 
 .bar-stable.bar-header .left-buttons button,.bar-stable.bar-header .title.header-item{
@@ -208,7 +325,7 @@ span.text-menu {
 input {
   font-family: input-font !important;
    color: white !important; 
-  |font-size:14px !important;
+  font-size:14px !important;
 }
 
 .back-login-register {

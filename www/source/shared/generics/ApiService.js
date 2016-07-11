@@ -24,6 +24,7 @@
             var  header = {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 }
+            console.log(url)
             data = _jsonToUrlencoded(data);
         
             console.log("haciendo peticion");
@@ -42,20 +43,20 @@
             return httpCall("POST", url, params, data, false);
         }
 
-        function getRequest(url, params, header) {
+        function getRequest(url, params) {
             return httpCall("GET", url, params, null, false);
         }
 
-        function getArrayRequest(url, params, header) {
+        function getArrayRequest(url, params) {
             return httpCall("GET", url, params, null, true);
         }
 
-        function putRequest(url, data, params, header) {
+        function putRequest(url, data, params) {
             return httpCall("PUT", url, params, data, false);
         }
 
-        function deleteRequest(url, data, params, header) {
-            return httpCall("DELETE", url, params, data ,false);
+        function deleteRequest(url, params) {
+            return httpCall("DELETE", url, params, null, null, false);
         }
 
         function _jsonToUrlencoded(obj) { //Codifica el JSON al formato x-www-form-urlencoded 

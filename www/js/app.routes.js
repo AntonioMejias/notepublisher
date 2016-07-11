@@ -38,8 +38,8 @@
 				url: '/chats',
 				views: {
 					'tab-chats': {
-						templateUrl: 'templates/tab-chats.html',
-						controller: 'ChatsCtrl'
+						templateUrl: 'source/components/notes/notes.html',
+						controller: 'NoteController as note'
 					}
 				}
 			})
