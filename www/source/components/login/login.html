@@ -1,0 +1,36 @@
+
+<ion-view >
+ <!--<ion-header-bar class="no-border" style="background:red">
+    <h1 class="title"></h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>-->
+<ion-content overflow-scroll="true" style="overflow:hidden;" class="padding back-login-register">
+    <center> <i class="big  white ion-compose"></i></center>
+    <center>  <h1 class="knowledge-text" style="color:white; margin-top:23px; margin-bottom:20px;"> Note Publisher</h1></center>
+    
+    <form  id="form-register" ng-submit="login.onSubmitForm()" class="list">
+            <label class="item item-input input-container">
+                <input type="text" required placeholder="" ng-model="login.user.login">
+                <span class="white input-label">Usuario ó email</span> 
+                <div class="barc"></div>
+            </label>
+            <label class="item item-input input-container">
+                <input type="password" required placeholder="" ng-model="login.user.pass">
+                <span class="white input-label">Contraseña</span>
+                <div class="barc"></div> 
+            </label>
+          
+            <input type="submit" class="button red-custom-button  button-block " value="Login">
+    </form>
+
+    
+    <!--<div ng-show="cargando" class="loading">
+        <div class="center">
+            <ion-spinner   icon="ripple" class="spinner-light"></ion-spinner>
+            <center class="mess"><p>Autenticando...</p><center>
+        </div>          
+    </div>-->
+</ion-content>
+</ion-view>
