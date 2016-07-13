@@ -1,0 +1,38 @@
+
+<ion-view view-title="Chats">
+<ion-header-bar align-title="" class="bar-publisher">
+
+
+    <i class="ion-arrow-left-c" ng-click="detail.goBack()"></i> 
+ 
+   <center class="center-align"><h1 class="small" center>Relevantes</h1></center>
+
+ 
+  
+</ion-header-bar>
+  <ion-content class="padding-detail">
+      <section on-double-tap="detail.updateNote()" class="note-detail">
+      <div  ng-class="detail.note.topColor"class="wrapper-detail no-border">
+         <img ng-src="{{detail.note.avatar}}" alt="">
+
+          <h2 class="space">{{detail.note.title}}</h2>
+         
+        <article class="m">
+          {{detail.note.message}}
+           <span class="right">{{detail.note.fecha | date:"MM/dd/yyyy '-' h:mma"}}</span><br>
+        </article>
+       
+        <div>
+            <ul class="balls">
+              <li id="red" ng-click="detail.changePriority('red')" class="red priority-ball"></li>
+              <li id="yellow" ng-click="detail.changePriority('yellow')" class="yellow priority-ball"></li>
+              <li id="green" ng-click="detail.changePriority('green')" class="green priority-ball"></li>
+            </ul>
+          
+        </div>
+
+      </div>
+         
+      </section>   
+  </ion-content>
+</ion-view>

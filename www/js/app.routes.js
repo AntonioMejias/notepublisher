@@ -10,7 +10,7 @@
 
 		// setup an abstract state for the tabs directive
 
-		.state('login', {
+			.state('login', {
 			url: '/login',
 			templateUrl: 'source/components/login/login.html',
 			controller: 'LoginController as login'
@@ -35,7 +35,8 @@
 		})
 
 		.state('tab.chats', {
-				url: '/chats',
+				url: '/notes/:priority',
+				cache: false,
 				views: {
 					'tab-chats': {
 						templateUrl: 'source/components/notes/notes.html',
@@ -43,12 +44,13 @@
 					}
 				}
 			})
-			.state('tab.chat-detail', {
-				url: '/chats/:chatId',
+			.state('tab.note-detail', {
+				url: '/chats/details/:noteId',
+				cache: false,
 				views: {
 					'tab-chats': {
-						templateUrl: 'templates/chat-detail.html',
-						controller: 'ChatDetailCtrl'
+						templateUrl: 'source/components/notedetail/notedetail.html',
+						controller: 'NoteDetailController as detail'
 					}
 				}
 			})
@@ -70,4 +72,3 @@
 
 
 })();
-	

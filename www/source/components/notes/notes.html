@@ -6,12 +6,16 @@
   <ion-content>
     <ion-list >
       <ion-item id="nota-{{nota.id}}" class="item-remove-animate item-avatar item-nota item-icon-right margin-b no-border" ng-repeat="nota in note.notes track by $index" type="item-text-wrap" >
-      <div class="content-note" ng-click="note.viewDetails(nota.id)">
+      <a href="#/tab/chats/details/{{nota.id}}">
+        
+        <div class="content-note" ng-click="note.viewDetails(nota.id)">
         <div ng-class="nota.priorityColor" class="priority-bar"></div>
         <img ng-src="{{nota.avatar}}">
-        <h2 class="title-note">{{nota.title}} dfdsfd</h2>
+        <h2 class="title-note">{{nota.title}}</h2>
         <p>{{nota.message}}</p>   
       </div>
+      </a>
+      
       <i class="icon ion-close-round litle" ng-click="note.onRemoveNote(nota.id)"></i>
         
 

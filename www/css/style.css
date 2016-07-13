@@ -101,15 +101,15 @@ i.big{
 }
 
 /*PUBLISHER**/
-
-.item-nota {
-  -webkit-transition: 0.4s ease;
-    transition: all 0.4s ease;
+.item-content a {
+   text-decoration: none;
 }
-
+.ion-arrow-left-c {
+  color: white !important;
+}
 .item-nota {
-    -webkit-transition: 0.4s ease;
-    transition: all 0.4s ease;
+    -webkit-transition: 0.8s ease;
+    transition: all 0.8s ease;
 }
 
 .item-nota-desaparecer {
@@ -177,7 +177,7 @@ div.tab-nav {
 }
 
 
-.item-avatar .item-content div.content-note > img:nth-child(2){
+.item-avatar .item-content div.content-note > img:nth-child(2) {
   position: absolute;
     top: 16px;
     left: 25px;
@@ -188,6 +188,44 @@ div.tab-nav {
     border-radius: 50%;
 }
 
+ section.note-detail img{
+  float:left;
+  height:40px;
+  width: 40px;
+  max-width: 40px;
+    max-height: 40px;
+  border-radius: 50%;
+  margin-top: 17px;
+
+}
+
+.space {
+  margin-left: 55px;
+    margin-bottom: 25px;
+}
+
+.m {
+  margin-bottom: 59px;
+}
+
+
+.top-red , .top-yellow , .top-green {
+   -webkit-transition: 0.5s ease;
+    transition: all 0.5s ease;
+}
+.top-red {
+  border-top: 5px solid #E43232 !important;
+}
+.top-yellow {
+  border-top: 5px solid #E6B500 !important;
+}
+.top-green {
+  border-top: 5px solid #26a69a !important;
+}
+
+
+    
+
 .priority-bar {
       position: absolute;
     left: 0;
@@ -196,7 +234,11 @@ div.tab-nav {
  
     width: 13px;
 }
-
+.right {
+  float: right;
+  color:#908989;
+  margin-top: 13px;
+}
 .no-border{
   border: 0px;
       box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1),0 2px 2px 0 rgba(0,0,0,0.1)!important;
@@ -220,9 +262,48 @@ div.tab-nav {
   background:#26a69a
 }
 
+.note-detail{
+  padding:8%;
+}
+
+.wrapper-detail {
+  background: white;
+      padding: 3%;
+}
+
+.priority-ball:first-child {
+    margin:0;
+}
+.priority-ball {
+      height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  float:left;
+  margin-left:10px;
+  -webkit-transition: 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.priority-ball.active {
+  -webkit-transform: scale(1.4);
+          transform:  scale(1.4);
+        
+
+}
+
+.padding-detail {
+  background:#F3F3F3;
+}
 .litle {
   font-size: 18px !important;
 }
+
+.balls {
+  height: 25px;
+    margin: 0 auto;
+    width: 90px;
+}
+
 
 /**PUBLISHER**/
 

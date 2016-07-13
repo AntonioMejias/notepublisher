@@ -28,7 +28,7 @@
 					if (response.success) {
 
 						localStorageService.set("user", response.data);
-						$state.go('tab.chats');
+						$state.go('tab.chats',{priority:2});
 
 					} else {
 						$ionicPopup.alert({

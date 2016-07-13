@@ -16,6 +16,7 @@
             this.getNoteByPriority = _getNoteByPriority;
             this.updateNote = _updateNote;
             this.deleteNote = _deleteNote;
+            this.note = {};
 
         }
 
